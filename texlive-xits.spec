@@ -1,11 +1,11 @@
-# revision 24548
+# revision 24696
 # category Package
 # catalog-ctan /fonts/xits
-# catalog-date 2011-11-08 20:18:32 +0100
+# catalog-date 2011-11-29 11:02:24 +0100
 # catalog-license ofl
-# catalog-version 1.102
+# catalog-version 1.103
 Name:		texlive-xits
-Version:	1.102
+Version:	1.103
 Release:	1
 Summary:	A Scientific Times-like font with support for mathematical typesetting
 Group:		Publishing
@@ -18,9 +18,6 @@ BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
 Requires(post):	texlive-kpathsea
-Conflicts:	texlive-texmf <= 20110705-3
-Conflicts:	texlive-doc <= 20110705-3
-Conflicts:	texlive-source <= 20110705-3
 
 %description
 XITS is a Times-like font for scientific typesetting with
@@ -30,19 +27,19 @@ LuaLaTeX or XeLaTeX, support is available from the fontspec and
 unicode-math packages.
 
 %pre
-    %_texmf_mktexlsr_pre
+    %{_sbindir}/texlive.post
 
 %post
-    %_texmf_mktexlsr_post
+    %{_sbindir}/texlive.post
 
 %preun
     if [ $1 -eq 0 ]; then
-	%_texmf_mktexlsr_pre
+	%{_sbindir}/texlive.post
     fi
 
 %postun
     if [ $1 -eq 0 ]; then
-	%_texmf_mktexlsr_post
+	%{_sbindir}/texlive.post
     fi
 
 #-----------------------------------------------------------------------
