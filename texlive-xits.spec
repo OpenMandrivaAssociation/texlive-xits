@@ -26,16 +26,8 @@ capable TeX engines, namely LuaTeX and XeTeX. For use with
 LuaLaTeX or XeLaTeX, support is available from the fontspec and
 unicode-math packages.
 
-%pre
-    %{_sbindir}/texlive.post
-
 %post
     %{_sbindir}/texlive.post
-
-%preun
-    if [ $1 -eq 0 ]; then
-	%{_sbindir}/texlive.post
-    fi
 
 %postun
     if [ $1 -eq 0 ]; then
@@ -66,7 +58,6 @@ unicode-math packages.
 %doc %{_texmfdistdir}/source/fonts/xits/xits-math.sfd
 %doc %{_texmfdistdir}/source/fonts/xits/xits-regular.sfd
 %doc %{_texmfdistdir}/source/fonts/xits/xits.fea
-%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -77,5 +68,3 @@ unicode-math packages.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar fonts doc source %{buildroot}%{_texmfdistdir}
-mkdir -p %{buildroot}%{_tlpkgobjdir}
-cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
