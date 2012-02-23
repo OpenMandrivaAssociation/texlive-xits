@@ -1,12 +1,12 @@
-# revision 24696
+# revision 25378
 # category Package
 # catalog-ctan /fonts/xits
-# catalog-date 2011-11-29 11:02:24 +0100
+# catalog-date 2012-02-12 16:58:37 +0100
 # catalog-license ofl
-# catalog-version 1.103
+# catalog-version 1.104
 Name:		texlive-xits
-Version:	1.103
-Release:	2
+Version:	1.104
+Release:	1
 Summary:	A Scientific Times-like font with support for mathematical typesetting
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/xits
@@ -46,6 +46,7 @@ unicode-math packages.
 %doc %{_texmfdistdir}/doc/fonts/xits/OFL-FAQ.txt
 %doc %{_texmfdistdir}/doc/fonts/xits/OFL.txt
 %doc %{_texmfdistdir}/doc/fonts/xits/README
+%doc %{_texmfdistdir}/doc/fonts/xits/postprocess.py
 %doc %{_texmfdistdir}/doc/fonts/xits/user-guide.pdf
 %doc %{_texmfdistdir}/doc/fonts/xits/user-guide.tex
 %doc %{_texmfdistdir}/doc/fonts/xits/xits-math.lfg
