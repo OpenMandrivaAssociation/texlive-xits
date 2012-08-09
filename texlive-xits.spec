@@ -1,11 +1,11 @@
-# revision 25378
+# revision 26719
 # category Package
 # catalog-ctan /fonts/xits
-# catalog-date 2012-02-12 16:58:37 +0100
+# catalog-date 2012-05-18 23:29:02 +0200
 # catalog-license ofl
-# catalog-version 1.104
+# catalog-version 1.105
 Name:		texlive-xits
-Version:	1.104
+Version:	1.105
 Release:	1
 Summary:	A Scientific Times-like font with support for mathematical typesetting
 Group:		Publishing
@@ -40,6 +40,7 @@ unicode-math packages.
 %{_texmfdistdir}/fonts/opentype/public/xits/xits-bolditalic.otf
 %{_texmfdistdir}/fonts/opentype/public/xits/xits-italic.otf
 %{_texmfdistdir}/fonts/opentype/public/xits/xits-math.otf
+%{_texmfdistdir}/fonts/opentype/public/xits/xits-mathbold.otf
 %{_texmfdistdir}/fonts/opentype/public/xits/xits-regular.otf
 %doc %{_texmfdistdir}/doc/fonts/xits/FONTLOG.txt
 %doc %{_texmfdistdir}/doc/fonts/xits/Makefile
@@ -57,6 +58,7 @@ unicode-math packages.
 %doc %{_texmfdistdir}/source/fonts/xits/xits-bolditalic.sfd
 %doc %{_texmfdistdir}/source/fonts/xits/xits-italic.sfd
 %doc %{_texmfdistdir}/source/fonts/xits/xits-math.sfd
+%doc %{_texmfdistdir}/source/fonts/xits/xits-mathbold.sfd
 %doc %{_texmfdistdir}/source/fonts/xits/xits-regular.sfd
 %doc %{_texmfdistdir}/source/fonts/xits/xits.fea
 
