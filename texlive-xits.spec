@@ -1,11 +1,11 @@
-# revision 26719
+# revision 30782
 # category Package
 # catalog-ctan /fonts/xits
-# catalog-date 2012-05-18 23:29:02 +0200
+# catalog-date 2013-05-28 19:52:13 +0200
 # catalog-license ofl
-# catalog-version 1.105
+# catalog-version 1.107
 Name:		texlive-xits
-Version:	1.105
+Version:	1.107
 Release:	1
 Summary:	A Scientific Times-like font with support for mathematical typesetting
 Group:		Publishing
