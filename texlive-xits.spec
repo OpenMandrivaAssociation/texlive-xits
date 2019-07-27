@@ -13,7 +13,7 @@ URL:		http://www.ctan.org/tex-archive/fonts/xits
 License:	OFL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/xits.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/xits.doc.tar.xz
-Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/xits.source.tar.xz
+#Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/xits.source.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -66,7 +66,7 @@ unicode-math packages.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1 -a2
+%setup -c -a0 -a1
 
 %build
 
