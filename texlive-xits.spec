@@ -36,33 +36,7 @@ unicode-math packages.
 
 #-----------------------------------------------------------------------
 %files
-%{_texmfdistdir}/fonts/opentype/public/xits/xits-bold.otf
-%{_texmfdistdir}/fonts/opentype/public/xits/xits-bolditalic.otf
-%{_texmfdistdir}/fonts/opentype/public/xits/xits-italic.otf
-%{_texmfdistdir}/fonts/opentype/public/xits/xits-math.otf
-%{_texmfdistdir}/fonts/opentype/public/xits/xits-mathbold.otf
-%{_texmfdistdir}/fonts/opentype/public/xits/xits-regular.otf
-%doc %{_texmfdistdir}/doc/fonts/xits/FONTLOG.txt
-%doc %{_texmfdistdir}/doc/fonts/xits/Makefile
-%doc %{_texmfdistdir}/doc/fonts/xits/OFL-FAQ.txt
-%doc %{_texmfdistdir}/doc/fonts/xits/OFL.txt
-%doc %{_texmfdistdir}/doc/fonts/xits/README
-%doc %{_texmfdistdir}/doc/fonts/xits/build.py
-%doc %{_texmfdistdir}/doc/fonts/xits/fontcoverage.py
-%doc %{_texmfdistdir}/doc/fonts/xits/postprocess.py
-%doc %{_texmfdistdir}/doc/fonts/xits/user-guide.pdf
-%doc %{_texmfdistdir}/doc/fonts/xits/user-guide.tex
-%doc %{_texmfdistdir}/doc/fonts/xits/xits-math.lfg
-%doc %{_texmfdistdir}/doc/fonts/xits/xits-specimen.pdf
-%doc %{_texmfdistdir}/doc/fonts/xits/xits-specimen.tex
-#- source
-%doc %{_texmfdistdir}/source/fonts/xits/xits-bold.sfd
-%doc %{_texmfdistdir}/source/fonts/xits/xits-bolditalic.sfd
-%doc %{_texmfdistdir}/source/fonts/xits/xits-italic.sfd
-%doc %{_texmfdistdir}/source/fonts/xits/xits-math.sfd
-%doc %{_texmfdistdir}/source/fonts/xits/xits-mathbold.sfd
-%doc %{_texmfdistdir}/source/fonts/xits/xits-regular.sfd
-%doc %{_texmfdistdir}/source/fonts/xits/xits.fea
+
 
 #-----------------------------------------------------------------------
 %prep
