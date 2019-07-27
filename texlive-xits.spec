@@ -36,7 +36,16 @@ unicode-math packages.
 
 #-----------------------------------------------------------------------
 %files
-
+%{_datadir}/texmf-dist/doc/fonts/xits/FONTLOG.txt
+%{_datadir}/texmf-dist/doc/fonts/xits/OFL-FAQ.txt
+%{_datadir}/texmf-dist/doc/fonts/xits/OFL.txt
+%{_datadir}/texmf-dist/doc/fonts/xits/README.txt
+%{_datadir}/texmf-dist/fonts/opentype/public/xits/XITS-Bold.otf
+%{_datadir}/texmf-dist/fonts/opentype/public/xits/XITS-BoldItalic.otf
+%{_datadir}/texmf-dist/fonts/opentype/public/xits/XITS-Italic.otf
+%{_datadir}/texmf-dist/fonts/opentype/public/xits/XITS-Regular.otf
+%{_datadir}/texmf-dist/fonts/opentype/public/xits/XITSMath-Bold.otf
+%{_datadir}/texmf-dist/fonts/opentype/public/xits/XITSMath-Regular.otf
 
 #-----------------------------------------------------------------------
 %prep
