@@ -72,4 +72,4 @@ unicode-math packages.
 
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
-cp -fpar fonts doc source %{buildroot}%{_texmfdistdir}
+cp -fpar fonts doc %{buildroot}%{_texmfdistdir}
