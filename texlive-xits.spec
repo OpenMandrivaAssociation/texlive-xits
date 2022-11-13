@@ -1,19 +1,12 @@
-# revision 32763
-# category Package
-# catalog-ctan /fonts/xits
-# catalog-date 2014-01-21 01:01:43 +0100
-# catalog-license ofl
-# catalog-version 1.108
 Name:		texlive-xits
-Version:	1.200.1
+Version:	55730
 Release:	1
 Summary:	A Scientific Times-like font with support for mathematical typesetting
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/xits
 License:	OFL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/xits.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/xits.doc.tar.xz
-#Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/xits.source.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/xits.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/xits.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -27,29 +20,21 @@ LuaLaTeX or XeLaTeX, support is available from the fontspec and
 unicode-math packages.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
-%{_datadir}/texmf-dist/doc/fonts/xits/FONTLOG.txt
-%{_datadir}/texmf-dist/doc/fonts/xits/OFL-FAQ.txt
-%{_datadir}/texmf-dist/doc/fonts/xits/OFL.txt
-%{_datadir}/texmf-dist/doc/fonts/xits/README.txt
-%{_datadir}/texmf-dist/fonts/opentype/public/xits/XITS-Bold.otf
-%{_datadir}/texmf-dist/fonts/opentype/public/xits/XITS-BoldItalic.otf
-%{_datadir}/texmf-dist/fonts/opentype/public/xits/XITS-Italic.otf
-%{_datadir}/texmf-dist/fonts/opentype/public/xits/XITS-Regular.otf
-%{_datadir}/texmf-dist/fonts/opentype/public/xits/XITSMath-Bold.otf
-%{_datadir}/texmf-dist/fonts/opentype/public/xits/XITSMath-Regular.otf
+%{_datadir}/texmf-dist/doc/fonts/xits
+%{_datadir}/texmf-dist/fonts/opentype/public/xits
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
