@@ -1,6 +1,6 @@
 Name:		texlive-xits
 Version:	55730
-Release:	1
+Release:	2
 Summary:	A Scientific Times-like font with support for mathematical typesetting
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/xits
