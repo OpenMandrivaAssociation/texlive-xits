@@ -3,7 +3,7 @@ Version:	55730
 Release:	2
 Summary:	A Scientific Times-like font with support for mathematical typesetting
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/fonts/xits
+URL:		https://www.ctan.org/tex-archive/fonts/xits
 License:	OFL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/xits.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/xits.doc.r%{version}.tar.xz
